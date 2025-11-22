@@ -148,6 +148,15 @@
             color: #666;
         }
 
+        /* Section Headers inside tabs */
+        .section-header {
+            margin-top: 40px;
+            color: var(--secondary-color);
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
         /* Style για το Welcome Message */
         .welcome-msg {
             text-align: center;
@@ -222,9 +231,7 @@
         <button class="tab-button" onclick="openCategory(event, 'HistDebate')">Ιστορία Debate</button>
         <button class="tab-button" onclick="openCategory(event, 'MockForensics')">Δικαστική Προσομοίωση/Forensics</button>
         <button class="tab-button" onclick="openCategory(event, 'SpeakingTools')">Εργαλεία Ομιλίας</button>
-        <button class="tab-button" onclick="openCategory(event, 'CreationTools')">Εργαλεία Δημιουργίας</button>
-        <button class="tab-button" onclick="openCategory(event, 'EscapeRooms')">Escape Rooms</button>
-        <button class="tab-button" onclick="openCategory(event, 'BonusMaterial')">Διαθεματικές Προσεγγίσεις (Bonus Υλικό)</button>
+        <button class="tab-button" onclick="openCategory(event, 'BonusMaterial')">Επιπλέον Υλικό</button>
     </nav>
 
     <main class="content-wrapper">
@@ -236,7 +243,7 @@
                 
                 <img src="image.png" alt="Welcome Logo" class="home-image">
                 
-                <p><i>(Εδώ θα προστεθεί μελλοντικό υλικό)</i></p>
+                <p><i></i></p>
             </div>
         </div>
 
@@ -359,12 +366,75 @@
                     <h3>Εύλογον</h3>
                     <p>Ρητορικό Εργαλείο</p>
                 </a>
+                <a href="https://pdomvros.github.io/writing-speech/" target="_blank" class="resource-card">
+                    <h3>Ομιλία σε Κοινό</h3>
+                    <p>Ρητορική & Ομιλία</p>
+                </a>
+                <a href="https://pdomvros.github.io/figures-speech/" target="_blank" class="resource-card">
+                    <h3>Ο λόγος δεν έχει λόγο να λέγεται</h3>
+                    <p>Σχήματα Λόγου</p>
+                </a>
             </div>
         </div>
 
-        <div id="CreationTools" class="tab-content">
-            <h2>Εργαλεία Δημιουργίας</h2>
+        <div id="BonusMaterial" class="tab-content">
+            <h2>Επιπλέον Υλικό</h2>
+            
+            <h3 class="section-header">Διαθεματικές Προσεγγίσεις</h3>
             <div class="link-grid">
+                <a href="https://domvrosepimorfosi.github.io/contemporary-odyssey/" target="_blank" class="resource-card">
+                    <h3>Η Οδύσσεια και οι σύγχρονες διαδρομές</h3>
+                    <p>Διαθεματική Προσέγγιση</p>
+                </a>
+                <a href="https://domvrosepimorfosi.github.io/history-akritika/" target="_blank" class="resource-card">
+                    <h3>Ιστορία & Νεοελληνική Λογοτεχνία</h3>
+                    <p>Ακριτικά Τραγούδια</p>
+                </a>
+                <a href="https://domvrosepimorfosi.github.io/Kornaros-vs-Shakespeare/" target="_blank" class="resource-card">
+                    <h3>Βιτσέντζος Κορνάρος vs Σαίξπηρ</h3>
+                    <p>Συγκριτική Προσέγγιση</p>
+                </a>
+            </div>
+
+            <h3 class="section-header">Εκπαιδευτικά παιχνίδια</h3>
+            <div class="link-grid">
+                <a href="https://pdomvros.github.io/to-marry-or-not-to-marry/" target="_blank" class="resource-card">
+                    <h3>Να το πάρεις το κορίτσι</h3>
+                    <p>Δίλημμα / Debate</p>
+                </a>
+                <a href="https://pdomvros.github.io/helen-quotes/" target="_blank" class="resource-card">
+                    <h3>«Ποιος/ποια το είπε;» (Ελένη)</h3>
+                    <p>Κουίζ Λογοτεχνίας</p>
+                </a>
+                <a href="https://pdomvros.github.io/ancient-riddles/" target="_blank" class="resource-card">
+                    <h3>Παιχνίδι Γρίφων: Αρχαία Αθήνα</h3>
+                    <p>Εκπαιδευτικό Παιχνίδι</p>
+                </a>
+            </div>
+
+            <h3 class="section-header">Γραμματική/Συντακτικό Αρχαίας Ελληνικής</h3>
+            <div class="link-grid">
+                <a href="https://pdomvros.github.io/aoristos-b/" target="_blank" class="resource-card">
+                    <h3>Αόριστος Β'</h3>
+                    <p>Γραμματική Αρχαίων</p>
+                </a>
+                <a href="https://domvrosepimorfosi.github.io/pathitiki-foni/" target="_blank" class="resource-card">
+                    <h3>Παθητική Φωνή</h3>
+                    <p>Γραμματική Αρχαίων</p>
+                </a>
+                <a href="https://domvrosepimorfosi.github.io/defterevouses-protaseis/" target="_blank" class="resource-card">
+                    <h3>Δευτερεύουσες Προτάσεις</h3>
+                    <p>Συντακτικό</p>
+                </a>
+            </div>
+
+            <h3 class="section-header">Εργαλεία Δημιουργίας</h3>
+            <div class="link-grid">
+                <a href="https://pdomvros.github.io/writing-article/" target="_blank" class="resource-card">
+                    <h3>Συγγραφή Άρθρου</h3>
+                    <p>Σχολική Εφημερίδα</p>
+                </a>
+                
                 <a href="https://pa-domvros.github.io/paragraph-builder-GR/" target="_blank" class="resource-card">
                     <h3>Δημιουργία Παραγράφου</h3>
                     <p>Εργαλείο Δόμησης</p>
@@ -398,10 +468,8 @@
                     <p>Γενικό εργαλείο</p>
                 </a>
             </div>
-        </div>
 
-        <div id="EscapeRooms" class="tab-content">
-            <h2>Escape Rooms</h2>
+            <h3 class="section-header">Escape Rooms</h3>
             <div class="link-grid">
                 <a href="https://docs.google.com/presentation/d/1EPFDaKxisv7sq3fjJoAXt1FF4um0X68I5c9LQxGlwCY/present?slide=id.p" target="_blank" class="resource-card">
                     <h3>Η Έξοδος του Μεσολογγίου</h3>
@@ -430,44 +498,6 @@
             </div>
         </div>
 
-        <div id="BonusMaterial" class="tab-content">
-            <h2>Διαθεματικές Προσεγγίσεις (Bonus Υλικό)</h2>
-            <div class="link-grid">
-                <a href="https://domvrosepimorfosi.github.io/contemporary-odyssey/" target="_blank" class="resource-card">
-                    <h3>Η Οδύσσεια και οι σύγχρονες διαδρομές</h3>
-                    <p>Διαθεματική Προσέγγιση</p>
-                </a>
-                <a href="https://domvrosepimorfosi.github.io/history-akritika/" target="_blank" class="resource-card">
-                    <h3>Ιστορία & Νεοελληνική Λογοτεχνία</h3>
-                    <p>Ακριτικά Τραγούδια</p>
-                </a>
-                <a href="https://pdomvros.github.io/ancient-riddles/" target="_blank" class="resource-card">
-                    <h3>Παιχνίδι Γρίφων: Αρχαία Αθήνα</h3>
-                    <p>Εκπαιδευτικό Παιχνίδι</p>
-                </a>
-                <a href="https://pdomvros.github.io/to-marry-or-not-to-marry/" target="_blank" class="resource-card">
-                    <h3>Να το πάρεις το κορίτσι</h3>
-                    <p>Δίλημμα / Debate</p>
-                </a>
-                <a href="https://pdomvros.github.io/helen-quotes/" target="_blank" class="resource-card">
-                    <h3>«Ποιος/ποια το είπε;» (Ελένη)</h3>
-                    <p>Κουίζ Λογοτεχνίας</p>
-                </a>
-                <a href="https://pdomvros.github.io/figures-speech/" target="_blank" class="resource-card">
-                    <h3>Ο λόγος δεν έχει λόγο να λέγεται</h3>
-                    <p>Σχήματα Λόγου</p>
-                </a>
-                <a href="https://pdomvros.github.io/writing-speech/" target="_blank" class="resource-card">
-                    <h3>Ομιλία σε Κοινό</h3>
-                    <p>Ρητορική & Ομιλία</p>
-                </a>
-                <a href="https://pdomvros.github.io/writing-article/" target="_blank" class="resource-card">
-                    <h3>Συγγραφή Άρθρου</h3>
-                    <p>Σχολική Εφημερίδα</p>
-                </a>
-            </div>
-        </div>
-
     </main>
 
     <footer>
@@ -475,7 +505,7 @@
     </footer>
 
     <script>
-        // Script για τα Tabs (χωρίς έλεγχο κωδικού πλέον)
+        // Script για τα Tabs
         function openCategory(evt, categoryName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab-content");
