@@ -179,6 +179,12 @@
             display: block;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease; /* Εφέ κίνησης */
+        }
+
+        /* Εφέ μεγέθυνσης στο hover της εικόνας-συνδέσμου */
+        a:hover .home-image {
+            transform: scale(1.05);
         }
 
         /* Footer Styling */
@@ -241,7 +247,9 @@
                 <h2>Καλωσήρθατε</h2>
                 <p>Επιλέξτε μια κατηγορία από το μενού για να δείτε το εκπαιδευτικό υλικό.</p>
                 
-                <img src="image.png" alt="Welcome Logo" class="home-image">
+                <a href="https://domvrosepimorfosi.github.io/reading-to-oration/" target="_blank">
+                    <img src="image.png" alt="Welcome Logo" class="home-image">
+                </a>
                 
                 <p><i></i></p>
             </div>
